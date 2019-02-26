@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schedule</title>
+  <link rel="shortcut icon" type="image" href="ico1.ico">
+  
+	<style type="text/css">
+
+ 
+   body{
+  font-family: 'Raleway', sans-serif;
+}
+    .ftr{
+      position: relative;
+      bottom: -40px;
+      width: 100%;
+      padding-top: 20px;
+      margin-left: -120px;
+
+    }
+
+    .footer{
+      display: none;
+    }
+     .ftr li{
+      display: inline;
+      padding: 0;
+      margin: 0 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color:#2E0D3A;
+      margin-bottom: 10px;
+      border-radius:10px;
+      border-style: solid;
+      border-color: white;
+      border-width: 1px
+    }
+    .ftr li a{
+      padding: 0 10px;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      transform: translateZ(0);
+
+    }
+    .ftr li a:hover
+    {
+
+      transform: scale(1.1);
+    }
+    .ftr li a:after {
+        content: '';
+      position: absolute;
+      left: 0;
+
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      border-bottom: 1px solid;
+      margin-top: 10px;
+
+      opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+
+       transition: opacity 0.35s, transform 0.35s;
+       -webkit-transform: scale(0,1);
+       transform: scale(0,1);
+}
+
+    .ftr li a:hover:after {
+        opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+}
+
+@media only screen and (max-width: 900px){
+  .footer{
+    display: inline;
+    position: relative;
+    color: #2E0D3A;
+    font-size: 12px;
+    bottom: -1px;
+    padding: 30px;
+    left: 10px;
+
+     
+      bottom: 0;
+      
+     padding: 0.5rem;
+     text-align: center;
+    
+       border-radius: 20px;
+
+  }
+  .footer:hover{
+     color: pink;
+}
+#wall{
+  width: 50%;
+}
+.ftr{
+  display: none;
+  
+}
+.footer:hover{
+  color: pink;
+}
+
+#link{
+color:white;
+}
+#link:hover{
+text-decoration:none;
+color:blue;
+}
+}
+
+
+	body{
+		background-color: blueviolet;
+
+
+	}
+		*, *:before, *:after {
+	}
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+
+ul.main { 
+  list-style: none;
+  max-width: 75%;
+  margin: 20px auto;
+}
+h3 {padding: 0; margin: 0;}
+
+
+.date {
+  width: 17%;
+  padding: 15% 1% 0 0 ;
+  float: left;
+}
+
+.date h3 {
+  font-size: 1.5em;
+}
+
+.date p {
+  font-size: .8em;
+}
+
+.events {
+  float: left;
+  width: 80%;
+  border-left: 1px solid #ccc;
+  margin-top: 10%;
+  padding-top: 3%;
+}
+
+.events-detail {
+  max-width: 550px;
+}
+
+.events-detail li{
+  padding: 10px;
+  border-bottom: 1px dashed #ccc;
+  line-height: 22px;
+  transition: ease .4s all;
+}
+
+.events-detail li:hover {
+  background: #e9e9e9;
+}
+
+.event-time {
+  font-weight: 900;
+}
+
+.events-detail li a {
+  text-decoration: none;
+  color: #444;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.event-location {
+    font-size: .8em;
+    color: tomato;
+    margin-left: 70px;
+}
+.sc{
+	padding: 10px;
+	margin: 30px;
+	padding-top: 30px;
+	margin-top: 40px;
+}
+
+
+
+@media all and (max-width: 641px) {
+    .date {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+  
+  .events {
+    border:none;
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .events-detail {
+    padding: 0;
+  }
+  
+  li.date p {
+    margin:0;
+  }
+}
+
+@media(max-width:900px){
+  body {
+overflow:hidden;
+width:100%;
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+.background{
+height: 800px;
+}
+
+.ftr{
+display: none;
+}
+.footer {
+  display: unset;
+position: sticky;
+right: 0;
+bottom: 0;
+left: 0;
+padding: 0.5rem;
+text-align: center;
+background-color:#2E0D3A;
+border-radius: 20px;
+}
+.footer:hover{
+  color: pink;
+}
+
+#link{
+color:white;
+}
+#link:hover{
+text-decoration:none;
+color:blue;
+}
+}
+
+#wall{
+  width:25%;
+}
+@media only screen and (max-width: 900px){
+  .footer{
+    display: inline;
+    position: absolute;
+    color: #2E0D3A;
+    font-size: 12px;
+    bottom: -1px;
+  }
+  .footer:hover{
+     color: pink;
+}
+#wall{
+  width: 50%;
+}
+}
+	</style>
+</head>
+<body>
+	<h1 align="center" class="sc">Schedule of Events</h1>
+	<hr>
+
+<ul class="main">
+  <li class="date">
+    <h3>Mar 15</h3>
+    <p></p>
+  </li>
+  <li class= "events">
+    <ul class="events-detail">
+      <li>
+        <a href="#">
+          <span class="event-time">- </span>
+          <span class="event-name"><b><h1>Curtain Raiser</h1></b></span>
+          <br />
+          <span class="event-location"></span>
+        </a>
+      </li>
+       
+       <li>
+        <a href="#">
+          <span class="event-time">- </span>
+          <span class="event-name"><b><h1>Story Telling</h1></b></span>
+          <br />
+          <span class="event-location"></span>
+        </a>
+      </li>
+      
+      
+     
+        
+         
+</ul> 
+ <footer class="ftr">
+      <center>
+      <ul>
+      <li><a href="About us.html" >About</a></li>
+      <li><a href="Sponsors.html" >Sponsors</a></li>
+      <li><a href="our team.html" >Our Team</a></li>
+      <li><a href="Contact Us.html" >Contact Us</a></li>
+    </ul>
+    </center>
+    </footer>
+    <footer class="footer">
+      <center>
+         <a href="About us.html"  id="link"> | About</a>
+         <a href="Sponsors.html"  id="link"> | Sponsors</a>
+         <a href="our team.html"  id="link"> | Our Team</a>
+          <a href="Contact Us.html"  id="link"> | Contact Us |</a>
+    </center>
+    </footer> 
+
+</body>
+</html>
